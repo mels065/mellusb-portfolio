@@ -1,0 +1,65 @@
+/* Variables */
+:root {
+    /* Colors */
+    --white: #eee;
+    --black: #333;
+    --theme-color-1: #397eed;
+
+    /* Spacing */
+    --header-spacing: 20px;
+}
+
+/* Global styles */
+html {
+    scroll-behavior: smooth; /* Used for scrolling effect when link is clicked */
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5ch;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+/* Header styles */
+header {
+    align-items: baseline;
+    background-color: var(--theme-color-1);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+header .left {
+    margin-left: var(--header-spacing);
+}
+
+header .right {
+    margin-right: var(--header-spacing);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+}
