@@ -127,6 +127,7 @@ nav a:hover {
 
 .project {
     text-align: center;
+    margin-bottom: 100px;
     width: 25%;
 }
 
@@ -147,8 +148,28 @@ nav a:hover {
 
 .project img {
     border-radius: var(--rounded-corners);
-    float: left;
-    object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.project a:hover img {
+    height: 95%;
+    width: 95%;
+}
+
+/* Contact Me styles */
+.contacts {
+    list-style: none;
+}
+
+.contacts a {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: var(--theme-color-2);
+    font-weight: normal;
+    text-decoration: underline;
 }
