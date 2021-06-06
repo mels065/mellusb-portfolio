@@ -100,18 +100,18 @@ nav a:hover {
 /* About Me styles */
 .about-me-info {
     margin: 0 auto;
-    width: 50%;
+    width: 50vw;
 }
 
 .image-me {
     border-radius: var(--rounded-corners);
     float: left;
     margin-right: 10px;
-    width: 300px;
+    width: 200px;
 }
 
 .about-me-info p {
-    width: 600px;
+    width: 40vw;
 }
 
 /* Work styles */
@@ -192,10 +192,42 @@ nav a:hover {
     }
 
     .project {
-        width: 35%;
+        width: 30%;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 
     .project:first-child h3 {
         top: 240px;
+    }
+}
+
+/* Mobile style */
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 0.9rem;
+    }
+    
+    a, p, li {
+        font-size: 0.8rem;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project:first-child h3 {
+        left: 30px;
+        top: 120px;
     }
 }
