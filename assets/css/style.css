@@ -103,6 +103,7 @@ nav a:hover {
     width: 50vw;
 }
 
+/* Creating a wrap around effect for the text */
 .image-me {
     border-radius: var(--rounded-corners);
     float: left;
@@ -121,6 +122,7 @@ nav a:hover {
     justify-content: center;
 }
 
+/* Target first child so it is bigger than the others */
 .project:first-child {
     width: 75%;
 }
@@ -131,6 +133,7 @@ nav a:hover {
     width: 25%;
 }
 
+/* Move the heading to the middle of the image with relative positioning */
 .project h3 {
     background-color: var(--theme-color-2);
     border-radius: 10px;
