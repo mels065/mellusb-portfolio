@@ -47,7 +47,7 @@ a, p, li {
 }
 
 section {
-    margin: 70px 0;
+    margin-bottom: 70px;
 }
 
 section header {
@@ -78,6 +78,10 @@ section header {
 .navbar-menu .navbar-item:hover {
     background-color: initial;
     color: initial;
+}
+
+h1.title {
+    font-size: 5rem;
 }
 
 /* About Me styles */
