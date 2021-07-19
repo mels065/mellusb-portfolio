@@ -1,8 +1,9 @@
+// NOTE: File paths are relative to root directory
 const projects = [
     {
         title: "Move Towards the Movies",
         repo: "move-towards-the-movies",
-        screenshot: "../images/screenshots/move-towards-the-movies.png",
+        screenshot: "./assets/images/screenshots/move-towards-the-movies.png",
         collaborators: [
             "Chrisbr916",
             "Bluekev22",
@@ -19,10 +20,12 @@ const projects = [
     },
     {
         title: "JavaScript Quiz",
-        repo: "javascript-quiz"
+        repo: "javascript-quiz",
+        multipleScreenshots: true
     },
     {
         title: "Password Generator",
-        repo: "password-generator"
+        repo: "password-generator",
+        multipleScreenshots: true
     }
 ]
