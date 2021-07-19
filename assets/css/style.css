@@ -25,13 +25,13 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5ch;
-}
+} */
 
-h1 {
+/* h1 {
     font-size: 3.5rem;
-}
+} */
 
 h2 {
     font-size: 2.7rem;
@@ -59,42 +59,25 @@ section header {
 }
 
 /* Header styles */
-.header {
-    align-items: baseline;
-    background-color: var(--theme-color-1);
-    color: var(--white);
+.navbar-brand a {
+    font-size: 0.8rem;
+}
+
+.navbar-menu {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    padding: 1px;
 }
 
-header .left {
-    margin-left: var(--header-spacing);
-}
-
-header .right {
-    margin-right: var(--header-spacing);
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
+.navbar-menu .navbar-item {
     color: var(--white);
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-nav a:hover {
-    font-weight: normal;
-    text-decoration: underline;
+.navbar-menu .navbar-item:hover {
+    background-color: initial;
+    color: initial;
 }
 
 /* About Me styles */
@@ -116,7 +99,7 @@ nav a:hover {
 }
 
 /* Work styles */
-.projects {
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -190,7 +173,7 @@ nav a:hover {
 
 /* Touchpad style */
 @media screen and (max-width: 1024px) {
-    .header {
+    #header {
         flex-direction: column;
     }
 
