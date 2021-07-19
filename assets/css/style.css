@@ -29,13 +29,12 @@ body {
     letter-spacing: 0.5ch;
 } */
 
-/* h1 {
-    font-size: 3.5rem;
-} */
+h1.title {
+    font-size: 5rem;
+}
 
-h2 {
-    font-size: 2.7rem;
-    text-decoration: underline;
+h2.title {
+    font-size: 3.5rem;
 }
 
 h3 {
@@ -46,16 +45,15 @@ a, p, li {
     font-size: 1.5rem;
 }
 
-section {
-    margin-bottom: 70px;
-}
-
 section header {
     background-color: var(--theme-color-1);
     border-left: 80px solid var(--theme-color-2);
+    border-top-left-radius: var(--rounded-corners);
+    border-top-right-radius: var(--rounded-corners);
     color: var(--white);
     padding: 1px;
     padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 /* Header styles */
@@ -78,10 +76,6 @@ section header {
 .navbar-menu .navbar-item:hover {
     background-color: initial;
     color: initial;
-}
-
-h1.title {
-    font-size: 5rem;
 }
 
 /* About Me styles */
