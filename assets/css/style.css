@@ -85,7 +85,7 @@ section > header {
 .image-me {
     border-radius: var(--rounded-corners);
     margin-right: 10px;
-    width: 200px;
+    width: 100%;
 }
 
 .about-me-info p {
