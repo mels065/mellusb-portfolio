@@ -45,7 +45,7 @@ a, p, li {
     font-size: 1.5rem;
 }
 
-section header {
+section > header {
     background-color: var(--theme-color-1);
     border-left: 80px solid var(--theme-color-2);
     border-top-left-radius: var(--rounded-corners);
@@ -93,14 +93,14 @@ section header {
 }
 
 /* Work styles */
-#projects {
+/* #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 /* Target first child so it is bigger than the others */
-.project:first-child {
+/* .project:first-child {
     width: 75%;
 }
 
@@ -108,10 +108,14 @@ section header {
     text-align: center;
     margin-bottom: 100px;
     width: 25%;
+} */
+
+.project {
+    margin: 5px 0;
 }
 
 /* Move the heading to the middle of the image with relative positioning */
-.project h3 {
+/* .project h3 {
     background-color: var(--theme-color-2);
     border-radius: 10px;
     color: var(--white);
@@ -119,23 +123,22 @@ section header {
     top: 150px;
     left: 40px;
     width: 80%;
-}
+} */
 
-.project:first-child h3 {
+/* .project:first-child h3 {
     top: 380px;
     left: 100px;
-}
+} */
 
 .project img {
     border-radius: var(--rounded-corners);
-    height: 100%;
     width: 100%;
 }
 
-.project a:hover img {
+/* .project a:hover img {
     height: 95%;
     width: 95%;
-}
+} */
 
 /* Contact Me styles */
 .contacts {
