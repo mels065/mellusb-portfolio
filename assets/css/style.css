@@ -25,17 +25,16 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5ch;
+} */
+
+h1.title {
+    font-size: 5rem;
 }
 
-h1 {
+h2.title {
     font-size: 3.5rem;
-}
-
-h2 {
-    font-size: 2.7rem;
-    text-decoration: underline;
 }
 
 h3 {
@@ -46,84 +45,62 @@ a, p, li {
     font-size: 1.5rem;
 }
 
-section {
-    margin: 70px 0;
-}
-
-section header {
+section > header {
     background-color: var(--theme-color-1);
     border-left: 80px solid var(--theme-color-2);
+    border-top-left-radius: var(--rounded-corners);
+    border-top-right-radius: var(--rounded-corners);
     color: var(--white);
     padding: 1px;
     padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 /* Header styles */
-.header {
-    align-items: baseline;
-    background-color: var(--theme-color-1);
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    padding: 1px;
+.navbar-brand h1 {
+    border: 10px solid var(--white);
+    border-radius: 100%;
+    font-size: 2.5rem;
 }
 
-header .left {
-    margin-left: var(--header-spacing);
-}
-
-header .right {
-    margin-right: var(--header-spacing);
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
+.navbar-menu .navbar-item {
     color: var(--white);
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-nav a:hover {
-    font-weight: normal;
-    text-decoration: underline;
+.navbar-menu .navbar-item:hover {
+    background-color: initial;
+    color: initial;
 }
 
 /* About Me styles */
-.about-me-info {
+.about-me-info.box {
+    display: flex;
     margin: 0 auto;
-    width: 50vw;
 }
 
 /* Creating a wrap around effect for the text */
 .image-me {
     border-radius: var(--rounded-corners);
-    float: left;
     margin-right: 10px;
-    width: 200px;
+    width: 100%;
 }
 
 .about-me-info p {
-    width: 40vw;
+    margin: 20px;
 }
 
 /* Work styles */
-.projects {
+/* #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 /* Target first child so it is bigger than the others */
-.project:first-child {
+/* .project:first-child {
     width: 75%;
 }
 
@@ -131,10 +108,14 @@ nav a:hover {
     text-align: center;
     margin-bottom: 100px;
     width: 25%;
+} */
+
+.project {
+    margin: 5px 0;
 }
 
 /* Move the heading to the middle of the image with relative positioning */
-.project h3 {
+/* .project h3 {
     background-color: var(--theme-color-2);
     border-radius: 10px;
     color: var(--white);
@@ -142,23 +123,22 @@ nav a:hover {
     top: 150px;
     left: 40px;
     width: 80%;
-}
+} */
 
-.project:first-child h3 {
+/* .project:first-child h3 {
     top: 380px;
     left: 100px;
-}
+} */
 
 .project img {
     border-radius: var(--rounded-corners);
-    height: 100%;
     width: 100%;
 }
 
-.project a:hover img {
+/* .project a:hover img {
     height: 95%;
     width: 95%;
-}
+} */
 
 /* Contact Me styles */
 .contacts {
@@ -190,7 +170,7 @@ nav a:hover {
 
 /* Touchpad style */
 @media screen and (max-width: 1024px) {
-    .header {
+    #header {
         flex-direction: column;
     }
 

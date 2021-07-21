@@ -4,6 +4,8 @@
         <title>Brandon Mellus</title>
         <!--Set viewport: https://stackoverflow.com/a/7860717-->
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <!--Bulma-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -15,96 +17,94 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header class="header">
-            <div class="left">
-                <h1>Brandon Mellus</h1>
-            </div>
-            <div class="right">
-                <nav>
-                    <ul>
-                        <li><a href="#About-Me">About Me</a></li>
-                        <li><a href="#Work">Work</a></li>
-                        <li><a href="#Contact-Me">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header id="header">
+            <section class="hero is-link is-fullheight">
+                    <div class="hero-head">
+                        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+                            <div class="container">
+                                <div class="navbar-brand">
+                                    <h1 class="navbar-item">BM</h1>
+                                    <a
+                                        role="button"
+                                        class="navbar-burger"
+                                        aria-label="menu"
+                                        aria-expanded="false"
+                                        data-target="menuOptions"
+                                    >
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <div id="menuOptions" class="navbar-menu has-background-link">
+                                    <div class="navbar-end">
+                                        <ul class="navbar-end columns is-vcentered">
+                                            <li>
+                                                <a class="navbar-item" href="#About-Me">
+                                                    About Me
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="navbar-item" href="#Work">
+                                                    Work
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="navbar-item" href="#Contact-Me">
+                                                    Contact Me
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class=hero-body>
+                        <div class="container has-text-centered">
+                            <h1 class="title">Brandon Mellus</h1>
+                            <p class="subtitle">Web development solutions</p>
+                        </div>
+                    </div>
+            </section>
         </header>
 
         <main>
-            <section id="About-Me">
-                <header>
-                    <h2>About Me</h2>
+            <section class="section is-medium" id="About-Me">
+                <header class="section has-background-link">
+                    <h2 class="title has-text-white">About Me</h2>
                 </header>
-                <div class="about-me-info">
-                    <img class="image-me" src="assets/images/me.jpg" alt="It's me!" />
-                    <p>
-                        Originally from Philly, I have adjusted to East 
-                        Lansing life! I have been
-                        fascinated by coding and web development ever since
-                        I found Codecademy 6 years ago. Below is the culmination
-                        of that work.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me cooking some tasty meals, 
-                        kicking back by the pool, listening to 2000s emo/pop 
-                        punk music, and beating my friends in Mario Kart.
-                    </p>
+                <div class="about-me-info box columns">
+                    <div class="container column">
+                        <img class="image-me media" src="assets/images/me.jpg" alt="It's me!" />
+                    </div>
+                    <div class="about-me-info-content column">
+                        <p>
+                            Originally from Philly, I have adjusted to East 
+                            Lansing life! I have been
+                            fascinated by coding and web development ever since
+                            I found Codecademy 6 years ago. Below is the culmination
+                            of that work.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me cooking some tasty meals, 
+                            kicking back by the pool, and listening to 90s and 2000s pop 
+                            punk music.
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <section id="Work">
-                <header>
-                    <h2>Work</h2>
+            <section class="section is-medium" id="Work">
+                <header class="section has-background-link">
+                    <h2 class="title has-text-white">Work</h2>
                 </header>
-                <div class="projects">
-                    <figure class="project">
-                        <a target="_blank" href="https://gentle-gorge-91021.herokuapp.com/">
-                            <h3>Conway's Game of Life</h3>
-                            <img src="assets/images/projects/game-of-life.png" alt="Game of Life screenshot" />
-                        </a>
-                    </figure>
-                    <figure class="project">
-                        <a target="_blank" href="https://mels065.github.io/react-calculator/">
-                            <h3>Calculator</h3>
-                            <img src="assets/images/projects/calculator.png" alt="Calculator screenshot" />
-                        </a>
-                    </figure>
-                    <figure class="project">
-                        <a target="_blank" href="https://mels065.github.io/pomodoro-clock/">
-                            <h3>Pomodoro Clock</h3>
-                            <img src="assets/images/projects/pomodoro-clock.png" alt="Pomodoro Clock screenshot" />
-                        </a>
-                    </figure>
-                    <figure class="project placeholder-project">
-                        <a href="#">
-                            <h3>Placeholder</h3>
-                            <img src="assets/images/projects/placehold.png" alt="Coming soon!" />
-                        </a>
-                    </figure>
-                    <figure class="project placeholder-project">
-                        <a href="#">
-                            <h3>Placeholder</h3>
-                            <img src="assets/images/projects/placehold.png" alt="Coming soon!" />
-                        </a>
-                    </figure>
-                    <figure class="project placeholder-project">
-                        <a href="#">
-                            <h3>Placeholder</h3>
-                            <img src="assets/images/projects/placehold.png" alt="Coming soon!" />
-                        </a>
-                    </figure>
-                    <figure class="project placeholder-project">
-                        <a href="#">
-                            <h3>Placeholder</h3>
-                            <img src="assets/images/projects/placehold.png" alt="Coming soon!" />
-                        </a>
-                    </figure>
-                </div>
+                <div id="projects" class="columns is-mobile is-multiline is-centered"></div>
             </section>
 
-            <section id="Contact-Me">
-                <header>
-                    <h2>Contact Me</h2>
+            <section class="section is-medium" id="Contact-Me">
+                <header class="section has-background-link">
+                    <h2 class="title has-text-white">Contact Me</h2>
                 </header>
                 <ul class="contacts">
                     <li><i class="fas fa-envelope"></i> Email: <a href="mailto:mellusbrandon@gmail.com">mellusbrandon@gmail.com</a></li>
@@ -113,8 +113,16 @@
                 </ul>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer has-background-link">
             <p class="copyright">Brandon Mellus &copy; 2021</p>
         </footer>
+
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Bulma Navbar Burger funcitonality-->
+        <script src="./assets/js/navbar-burgers.js"></script>
+
+        <script src="./assets/js/projects.js"></script>
+        <script src="./assets/js/generate-projects.js"></script>
     </body>
 </html>
