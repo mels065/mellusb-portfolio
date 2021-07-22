@@ -6,10 +6,10 @@ projects.forEach(({ repo, title, screenshot, multipleScreenshots } , i) => {
         `
             <figure class="project card column ${i === 0 ? "is-full" : "is-one-third-desktop is-half-tablet is-full-mobile"}">
                 <header class="has-text-centered">
-                    <h3 class="title">${title}</h3>
+                    <h3 class="title is-underlined">${title}</h3>
                     <ul class="project-links columns">
-                        <li class="project-link project-demo column"><a class="button is-black" target="_blank" href="https://mels065.github.io/${repo}">Demo</a></li>
-                        <li class="project-link project-repo column"><a class="button is-black" target="_blank" href="https://www.github.com/mels065/${repo}">Repo</a></li>
+                        <li class="project-link project-demo column"><a class="button is-link" target="_blank" href="https://mels065.github.io/${repo}">Demo</a></li>
+                        <li class="project-link project-repo column"><a class="button is-link" target="_blank" href="https://www.github.com/mels065/${repo}">Repo</a></li>
                     </ul>
                 </header>
                 <img src="${screenshotPath}" alt="${title}" />
