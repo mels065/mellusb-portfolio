@@ -1,4 +1,10 @@
-projects.forEach(({ repo, title, screenshot, multipleScreenshots } , i) => {
+projects.forEach(({ 
+    repo,
+    title,
+    screenshot,
+    multipleScreenshots,
+    collaborators
+} , i) => {
     const screenshotPath = screenshot
         ? screenshot 
         : `https://raw.githubusercontent.com/mels065/${repo}/main/assets/images/screenshots/screenshot${multipleScreenshots ? 1 : ""}.png`;
@@ -7,6 +13,7 @@ projects.forEach(({ repo, title, screenshot, multipleScreenshots } , i) => {
             <figure class="project card column ${i === 0 ? "is-full" : "is-one-third-desktop is-half-tablet is-full-mobile"}">
                 <header class="has-text-centered">
                     <h3 class="title is-underlined">${title}</h3>
+                    <p class="subtitle">Collaborators: ${collaborators ? generateCollaborators(collaborators) : "None"}</p>
                     <ul class="project-links columns">
                         <li class="project-link project-demo column"><a class="button is-link" target="_blank" href="https://mels065.github.io/${repo}">Demo</a></li>
                         <li class="project-link project-repo column"><a class="button is-link" target="_blank" href="https://www.github.com/mels065/${repo}">Repo</a></li>
@@ -18,3 +25,10 @@ projects.forEach(({ repo, title, screenshot, multipleScreenshots } , i) => {
     );
     $("#projects").append(el);
 });
+
+function generateCollaborators(collaborators) {
+    return collaborators.map(
+        (person) =>
+            `<a class="has-text-black has-text-weight-bold is-size-6" href="https://www.github.com/${person}">${person}</a>`
+    ).join(", ")
+}
