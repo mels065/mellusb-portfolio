@@ -1,0 +1,14 @@
+[
+    {
+        "project_id": 1,
+        "collaborator_id": 1
+    },
+    {
+        "project_id": 1,
+        "collaborator_id": 2
+    },
+    {
+        "project_id": 1,
+        "collaborator_id": 3
+    }
+]

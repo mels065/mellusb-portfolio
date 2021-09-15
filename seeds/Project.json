@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Move Towards the Movies",
+        "repo": "move-towards-the-movies",
+        "has_screenshot": true
+    },
+    {
+        "title": "Weather Dashboard",
+        "repo": "weather-dashboard"
+    },
+    {
+        "title": "Work Day Planner",
+        "repo": "work-day-planner"
+    },
+    {
+        "title": "JavaScript Quiz",
+        "repo": "javascript-quiz"
+    },
+    {
+        "title": "Password Generator",
+        "repo": "password-generator"
+    }
+]
