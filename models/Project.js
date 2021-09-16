@@ -33,6 +33,10 @@ Project.init(
         has_screenshot: {
             type: DataTypes.BOOLEAN,
             default: false
+        },
+        is_showcase: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     },
     {

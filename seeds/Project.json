@@ -2,7 +2,7 @@
     {
         "title": "Move Towards the Movies",
         "repo": "move-towards-the-movies",
-        "has_screenshot": true
+        "is_showcase": true
     },
     {
         "title": "Weather Dashboard",
