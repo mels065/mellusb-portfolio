@@ -6,7 +6,7 @@ Project.belongsToMany(
     Collaborator,
     {
         through: ProjectCollaborator,
-        as: 'projects'
+        as: 'collaborators'
     }
 );
 
@@ -14,7 +14,7 @@ Collaborator.belongsToMany(
     Project,
     {
         through: ProjectCollaborator,
-        as: 'collaborators'
+        as: 'projects'
     }
 );
 

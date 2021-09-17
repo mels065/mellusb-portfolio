@@ -15,7 +15,10 @@ router.get('/', async (req, res) => {
         const projects = (await Project.findAll(
             {
                 include: [
-                    { model: Collaborator }
+                    { model: Collaborator, as: "collaborators" }
+                ],
+                order: [
+                    ['is_showcase', 'DESC']
                 ]
             }
         )).map(projectData => {

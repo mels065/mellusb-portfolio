@@ -30,9 +30,16 @@ Project.init(
                 }
             }
         },
+        url: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                isUrl: true
+            }
+        },
         has_screenshot: {
             type: DataTypes.BOOLEAN,
-            default: false
+            defaultValue: false
         },
         is_showcase: {
             type: DataTypes.BOOLEAN,
