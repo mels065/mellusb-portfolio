@@ -8,22 +8,20 @@
     {
         "title": "Weather Dashboard",
         "repo": "weather-dashboard",
-        "url": "https://mels065.github.io/weather-dashboard"
-    },
-    {
-        "title": "Work Day Planner",
-        "repo": "work-day-planner",
-        "url": "https://mels065.github.io/work-day-planner"
+        "url": "https://mels065.github.io/weather-dashboard",
+        "has_screenshot": true
     },
     {
         "title": "JavaScript Quiz",
         "repo": "javascript-quiz",
-        "url": "https://mels065.github.io/javascript-quiz"
+        "url": "https://mels065.github.io/javascript-quiz",
+        "has_screenshot": true
     },
     {
         "title": "Tech Blog",
         "repo": "tech-blog",
         "url": "https://salty-ridge-62476.herokuapp.com/",
+        "has_screenshot": true,
         "is_showcase": true
     }
 ]

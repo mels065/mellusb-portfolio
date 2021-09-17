@@ -8,6 +8,4 @@ const apiRouter = express.Router();
 apiRouter.use('/project', projectRouter);
 apiRouter.use('/download', downloadRouter);
 
-console.log(apiRouter);
-
 module.exports = apiRouter;
