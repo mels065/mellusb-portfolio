@@ -5,7 +5,7 @@ let sequelize;
 
 if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
-} else if (process.env.NODE_ENV.trim() === "staging") {
+} else if (process.env.NODE_ENV && process.env.NODE_ENV.trim() === "staging") {
     sequelize = new Sequelize(
         process.env.PROD_DB_NAME,
         process.env.PROD_DB_USER,
