@@ -20,8 +20,6 @@
     {
         "title": "Tech Blog",
         "repo": "tech-blog",
-        "url": "https://salty-ridge-62476.herokuapp.com/",
-        "has_screenshot": true,
-        "is_showcase": true
+        "url": "https://salty-ridge-62476.herokuapp.com/"
     }
 ]
