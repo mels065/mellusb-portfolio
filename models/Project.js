@@ -37,9 +37,9 @@ Project.init(
                 isUrl: true
             }
         },
-        has_screenshot: {
-            type: DataTypes.BOOLEAN,
-            defaultValue: false
+        screenshot: {
+            type: DataTypes.STRING,
+            defaultValue: null
         },
         is_showcase: {
             type: DataTypes.BOOLEAN,

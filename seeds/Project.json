@@ -1,25 +1,38 @@
 [
     {
+        "title": "Casual Class",
+        "repo": "https://github.com/austinrohn19/casualclass.git.io",
+        "url": "https://intense-stream-43851.herokuapp.com/",
+        "screenshot": "casual-class.png"
+    },
+    {
+        "title": "Tech Blog",
+        "repo": "tech-blog",
+        "url": "https://salty-ridge-62476.herokuapp.com/",
+        "screenshot": "tech-blog.png"
+    },
+    {
+        "title": "Fitness Tracker",
+        "repo": "workout-tracker",
+        "url": "https://limitless-thicket-03345.herokuapp.com/?id=619ace3db49fa900161347db",
+        "screenshot": "workout-tracker.png"
+    },
+    {
         "title": "Move Towards the Movies",
         "repo": "move-towards-the-movies",
         "url": "https://mels065.github.io/move-towards-the-movies/",
-        "has_screenshot": true
+        "screenshot": "move-towards-the-movies.png"
     },
     {
         "title": "Weather Dashboard",
         "repo": "weather-dashboard",
         "url": "https://mels065.github.io/weather-dashboard",
-        "has_screenshot": true
+        "screenshot": "weather-dashboard.png"
     },
     {
         "title": "JavaScript Quiz",
         "repo": "javascript-quiz",
         "url": "https://mels065.github.io/javascript-quiz",
-        "has_screenshot": true
-    },
-    {
-        "title": "Tech Blog",
-        "repo": "tech-blog",
-        "url": "https://salty-ridge-62476.herokuapp.com/"
+        "screenshot": "javascript-quiz.png"
     }
 ]

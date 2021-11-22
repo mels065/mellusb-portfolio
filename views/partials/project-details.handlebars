@@ -6,11 +6,15 @@
         <p class="card-text">Collaborators: {{{generate_collaborators collaborators}}}</p>
         <ul class="project-links is-flex">
             <li class="project-link project-demo"><a class="button is-link is-outlined" target="_blank" href="{{url}}">Demo</a></li>
-            <li class="project-link project-repo"><a class="button is-link is-outlined" target="_blank" href="https://www.github.com/mels065/{{repo}}">Repo</a></li>
+            <li class="project-link project-repo">
+                <a
+                    class="button is-link is-outlined"
+                    target="_blank"
+                    href={{{generate_repo repo}}}>Repo</a></li>
         </ul>
     </div>
     <hr />
     <div class="card-image">
-        <img class="image" src="{{generate_screenshot has_screenshot repo}}" alt="${title}" />
+        <img class="image" src="{{generate_screenshot screenshot}}" alt="${title}" />
     </div>
 </figure>

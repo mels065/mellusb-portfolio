@@ -2,6 +2,13 @@ module.exports = {
     format_date(date) {
         return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
     },
+    generate_repo(repo) {
+        if (!/^(https:\/\/)*(www\.)*github\.com\/(?!mels065)\/[A-Za-z0-9_\-]+/.test(repo)) {
+            return repo;
+        } else {
+            return `https://www.github.com/mels065/${repo};`
+        }
+    },
     generate_project_placement(is_showcase) {
         return is_showcase ? "is-full" : "is-one-third-desktop is-half-tablet is-full-mobile"
     },
@@ -15,9 +22,10 @@ module.exports = {
             return 'None';
         }
     },
-    generate_screenshot(has_screenshot, repo) {
-        if (has_screenshot) {
-            return `/images/projects/${repo}.png`;
+    generate_screenshot(screenshot) {
+        console.log(screenshot)
+        if (screenshot) {
+            return `/images/projects/${screenshot}`;
         } else {
             return `/images/projects/placehold.png`;
         }
