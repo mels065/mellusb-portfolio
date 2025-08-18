@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "stop": "kill $(lsof -t -i:$PORT || echo -1) || 'No process on port $($PORT) to stop'",
     "seed": "node seeds",
     "seed-staging": "set NODE_ENV=staging && node seeds",
     "watch": "nodemon server.js",
