@@ -20,4 +20,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t cicd-pipeline-portfolio .
     - name: Push to Dockerhub
-      run: docker push mellusb/cicd-pipeline-portfolio:latest
+      run: docker push cicd-pipeline-portfolio:latest
