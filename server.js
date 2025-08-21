@@ -14,18 +14,6 @@ async function init() {
     const app = express();
     const PORT = process.env.PORT || 3001;
 
-    // app.use(session({
-    //     secret: process.env.SESSION_SECRET,
-    //     cookie: {
-    //         maxAge: 1000 * 60 * 60 * 24
-    //     },
-    //     resave: false,
-    //     saveUninitialized: true,
-    //     store: new SequelizeStore({
-    //         db: sequelize
-    //     })
-    // }));
-
     const hbs = exphbs.create({ helpers });
     app.engine('handlebars', hbs.engine);
     app.set('view engine', 'handlebars');
